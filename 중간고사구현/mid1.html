@@ -1,0 +1,24 @@
+<html> 
+    <head> 
+        <meta charset="utf-8" /> 
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+  
+        <body><div class="count">
+            <input class="count" value="0" r="" name="">
+            <input value="++" count="p" type="button">
+            <input value="--" count="m" type="button">
+          </div>
+            
+        <script type="text/javascript"> 
+            var count = new Vue({
+                el :'#app',
+                data: { value: 0 },
+                methods: {
+                increase() {
+                this.p++;
+                },
+                minus() {
+                 this.m--;
+                }
+            }})
+                </script> </body> </html>
